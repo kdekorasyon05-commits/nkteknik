@@ -1,14 +1,80 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NK Teknik Dekorasyon</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NK Teknik Dekorasyon</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:Arial,sans-serif;color:#222;background:#f7f7f7}
+header{position:fixed;top:0;width:100%;background:#111;color:#fff;padding:18px 8%;display:flex;justify-content:space-between;align-items:center;z-index:10}
+nav a{color:#fff;text-decoration:none;margin-left:18px}
+.hero{height:100vh;background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80') center/cover;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;padding:20px}
+.hero h1{font-size:54px}.btn{display:inline-block;margin-top:25px;background:#d4af37;color:#fff;padding:14px 30px;text-decoration:none;border-radius:6px}
+section{padding:80px 8%}h2{text-align:center;margin-bottom:30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.card{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 8px 20px rgba(0,0,0,.12)}
+.card img{width:100%;height:220px;object-fit:cover}
+.card h3,.card p{padding:12px}
+.contact{background:#111;color:#fff;border-radius:10px;padding:30px}
+footer{background:#111;color:#fff;text-align:center;padding:25px}
+@media(max-width:768px){.hero h1{font-size:34px}header{flex-direction:column}}
+</style>
 </head>
 <body>
+<header>
+<div><b>NK Teknik Dekorasyon</b></div>
+<nav>
+<a href="#hakkimizda">Hakkımızda</a>
+<a href="#hizmetler">Hizmetler</a>
+<a href="#projeler">Projeler</a>
+<a href="#iletisim">İletişim</a>
+</nav>
+</header>
 
-    <h1>NK Teknik Dekorasyon</h1>
-    <p>Profesyonel İç ve Dış Dekorasyon Hizmetleri</p>
+<section class="hero">
+<div>
+<h1>Profesyonel İç ve Dış Dekorasyon</h1>
+<p>Kaliteli işçilik, estetik çözümler ve modern tasarımlar.</p>
+<a class="btn" href="#iletisim">Bize Ulaşın</a>
+</div>
+</section>
 
-</body>
-</html>
+<section id="hakkimizda">
+<h2>Hakkımızda</h2>
+<p style="text-align:center;max-width:900px;margin:auto">NK Teknik Dekorasyon olarak iç ve dış dekorasyon, boya, alçıpan, asma tavan, seramik, fayans ve anahtar teslim tadilat hizmetleri sunuyoruz.</p>
+</section>
+
+<section id="hizmetler">
+<h2>Hizmetlerimiz</h2>
+<div class="grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=80"><h3>İç Dekorasyon</h3></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80"><h3>Mutfak & Banyo</h3></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=800&q=80"><h3>Boya & Tadilat</h3></div>
+</div>
+</section>
+
+<section id="projeler">
+<h2>Projelerimiz</h2>
+<div class="grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80"></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=900&q=80"></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80"></div>
+</div>
+</section>
+
+<section id="iletisim">
+<div class="contact">
+<h2>İletişim</h2>
+<p><b>Telefon:</b> 0545 433 91 16</p>
+<p><b>E‑posta:</b> k.dekorasyon05@gmail.com</p>
+<form>
+<p><input style="width:100%;padding:12px;margin:8px 0" placeholder="Ad Soyad"></p>
+<p><input style="width:100%;padding:12px;margin:8px 0" placeholder="Telefon"></p>
+<p><textarea style="width:100%;padding:12px;height:120px" placeholder="Mesajınız"></textarea></p>
+<button class="btn" type="button">Gönder</button>
+</form>
+</div>
+</section>
+
+<footer>© 2026 NK Teknik Dekorasyon - Tüm Hakları Saklıdır.</footer>
+</body></html>
