@@ -6,8 +6,8 @@
 <title>NK Teknik Dekorasyon</title>
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Arial,sans-serif;color:#222;background:#f7f7f7}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial;background:#f5f5f5;color:#222}
 
 header{
 position:fixed;
@@ -15,24 +15,23 @@ top:0;
 width:100%;
 background:#111;
 color:white;
-padding:18px 8%;
+padding:20px 8%;
 display:flex;
 justify-content:space-between;
-align-items:center;
 z-index:10
 }
 
 nav a{
 color:white;
 text-decoration:none;
-margin-left:18px
+margin:10px
 }
 
 .hero{
 height:100vh;
 background:
-linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-url("https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80")
+linear-gradient(#0008,#0008),
+url("https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1600")
 center/cover;
 display:flex;
 align-items:center;
@@ -44,13 +43,13 @@ color:white
 .hero h1{font-size:50px}
 
 .btn{
-display:inline-block;
-margin-top:25px;
 background:#d4af37;
 color:white;
-padding:14px 30px;
-border-radius:6px;
-text-decoration:none
+padding:15px 30px;
+display:inline-block;
+margin-top:20px;
+text-decoration:none;
+border-radius:5px
 }
 
 section{padding:80px 8%}
@@ -67,10 +66,10 @@ gap:20px
 background:white;
 border-radius:10px;
 overflow:hidden;
-box-shadow:0 8px 20px #0002
+box-shadow:0 5px 20px #0003
 }
 
-.card img{
+.card>img{
 width:100%;
 height:220px;
 object-fit:cover
@@ -87,6 +86,12 @@ padding:15px;
 line-height:1.6
 }
 
+.detay img{
+width:100%;
+margin-top:15px;
+border-radius:8px
+}
+
 .contact{
 background:#111;
 color:white;
@@ -98,13 +103,9 @@ footer{
 background:#111;
 color:white;
 text-align:center;
-padding:25px
+padding:20px
 }
 
-@media(max-width:768px){
-.hero h1{font-size:32px}
-header{flex-direction:column}
-}
 </style>
 
 </head>
@@ -117,9 +118,7 @@ header{flex-direction:column}
 <b>NK Teknik Dekorasyon</b>
 
 <nav>
-<a href="#hakkimizda">Hakkımızda</a>
-<a href="#hizmetler">Hizmetler</a>
-<a href="#projeler">Projeler</a>
+<a href="#hizmet">Hizmetler</a>
 <a href="#iletisim">İletişim</a>
 </nav>
 
@@ -131,10 +130,10 @@ header{flex-direction:column}
 
 <div>
 
-<h1>Profesyonel İç ve Dış Dekorasyon</h1>
+<h1>Profesyonel Dekorasyon Hizmetleri</h1>
 
 <p>
-Kaliteli işçilik, estetik çözümler ve modern tasarımlar.
+Modern tasarım kaliteli işçilik
 </p>
 
 <a class="btn" href="#iletisim">
@@ -147,111 +146,170 @@ Bize Ulaşın
 
 
 
-<section id="hakkimizda">
+<section id="hizmet">
 
-<h2>Hakkımızda</h2>
-
-<p style="text-align:center">
-NK Teknik Dekorasyon;
-PVC doğrama, cam balkon, pergola,
-iç dekorasyon ve anahtar teslim tadilat hizmetleri sunmaktadır.
-</p>
-
-</section>
-
-
-
-
-<section id="hizmetler">
-
-<h2>Hizmetlerimiz</h2>
+<h2>Hizmet Kataloğu</h2>
 
 <div class="grid">
 
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=80">
-<h3 onclick="ac('a')">İç Dekorasyon ▾</h3>
-<div id="a" class="detay">
-Salon, oda, ofis ve tüm yaşam alanları için modern dekorasyon çözümleri.
+
+<img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800">
+
+<h3 onclick="ac('i')">
+İç Dekorasyon ▾
+</h3>
+
+<div id="i" class="detay">
+
+Modern salon, oda ve yaşam alanları.
+
+<img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=700">
+
 </div>
+
 </div>
+
+
 
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80">
-<h3 onclick="ac('b')">Mutfak & Banyo ▾</h3>
+
+<img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800">
+
+<h3 onclick="ac('b')">
+Mutfak & Banyo ▾
+</h3>
+
 <div id="b" class="detay">
-Komple mutfak yenileme, banyo tadilatı, seramik ve fayans uygulamaları.
+
+Mutfak yenileme ve banyo tadilat.
+
+<img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?w=700">
+
 </div>
+
 </div>
+
+
 
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80">
-<h3 onclick="ac('c')">PVC Doğrama ▾</h3>
+
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800">
+
+<h3 onclick="ac('p')">
+PVC Doğrama ▾
+</h3>
+
+<div id="p" class="detay">
+
+PVC pencere ve kapı sistemleri.
+
+<img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=700">
+
+</div>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800">
+
+<h3 onclick="ac('c')">
+Cam Balkon ▾
+</h3>
+
 <div id="c" class="detay">
-PVC pencere ve kapı sistemleri, ısı ve ses yalıtımlı çözümler.
+
+Katlanır cam balkon,
+sürgülü sistemler ve balkon kapatma.
+
+<img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?w=700">
+
+<img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=700">
+
+<img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=700">
+
 </div>
+
 </div>
+
+
 
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80">
-<h3 onclick="ac('d')">Cam Balkon ▾</h3>
+
+<img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800">
+
+<h3 onclick="ac('d')">
+Duşakabin ▾
+</h3>
+
 <div id="d" class="detay">
-Katlanır cam balkon, sürgülü sistemler ve balkon kapatma uygulamaları.
+
+Özel ölçü duşakabin,
+temperli cam sistemleri.
+
+<img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?w=700">
+
+<img src="https://images.unsplash.com/photo-1584622781867-4c8e7a6c2f3d?w=700">
+
 </div>
+
 </div>
+
+
 
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=80">
-<h3 onclick="ac('e')">Pergola Sistemleri ▾</h3>
-<div id="e" class="detay">
-Otomatik pergola, tente ve teras çözümleri.
+
+<img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800">
+
+<h3 onclick="ac('pg')">
+Pergola Sistemleri ▾
+</h3>
+
+<div id="pg" class="detay">
+
+Otomatik pergola ve tente çözümleri.
+
+<img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?w=700">
+
 </div>
+
 </div>
+
 
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=800&q=80">
-<h3 onclick="ac('f')">Seramik & Fayans ▾</h3>
-<div id="f" class="detay">
+
+<img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800">
+
+<h3 onclick="ac('s')">
+Seramik & Fayans ▾
+</h3>
+
+<div id="s" class="detay">
+
 Zemin ve duvar kaplama uygulamaları.
-</div>
-</div>
 
+<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=700">
 
-</div>
-
-</section>
-
-
-
-
-
-<section id="projeler">
-
-<h2>Projelerimiz</h2>
-
-<div class="grid">
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80">
 </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=900&q=80">
 </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80">
-</div>
+
 
 </div>
 
 </section>
+
 
 
 
@@ -266,38 +324,20 @@ Zemin ve duvar kaplama uygulamaları.
 
 <p><b>Firma:</b> NK Teknik Dekorasyon</p>
 
-<p><b>Hizmet Alanları:</b>
-PVC Doğrama - Cam Balkon - Pergola - İç Dekorasyon
+<p>
+PVC Doğrama - Cam Balkon - Pergola - Duşakabin - Dekorasyon
 </p>
 
 </div>
 
 </section>
 
-
-
-
-<section>
-
-<div class="contact">
-
-<h2>NK Teknik Dekorasyon</h2>
-
-<p style="text-align:center">
-Profesyonel dekorasyon ve tadilat çözümleri.
-<br>
-Kaliteli işçilik • Modern Tasarım • Güvenilir Hizmet
-</p>
-
-</div>
-
-</section>
 
 
 
 <footer>
 
-© 2026 NK Teknik Dekorasyon - Tüm Hakları Saklıdır.
+© 2026 NK Teknik Dekorasyon
 
 </footer>
 
@@ -309,11 +349,7 @@ function ac(id){
 
 let x=document.getElementById(id);
 
-if(x.style.display=="block"){
-x.style.display="none";
-}else{
-x.style.display="block";
-}
+x.style.display=x.style.display=="block"?"none":"block";
 
 }
 
