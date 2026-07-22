@@ -146,7 +146,413 @@ class="whatsapp" target="_blank" aria-label="WhatsApp">
   <body>
 
 
+<header><!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TK Teknik Dekorasyon</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial;background:#f5f5f5;color:#222}
+
+header{
+
+position:fixed;
+top:0;
+width:100%;
+background:#111;
+color:white;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+z-index:10
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:10px
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(#0008,#0008),
+url("https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1600")
+center/cover;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white
+}
+
+.hero h1{font-size:50px}
+
+.btn{
+background:#d4af37;
+color:white;
+padding:15px 30px;
+display:inline-block;
+margin-top:20px;
+text-decoration:none;
+border-radius:5px
+}
+
+section{padding:80px 8%}
+
+h2{text-align:center;margin-bottom:30px}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px
+}
+
+.card{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 5px 20px #0003
+}
+
+.card>img{
+width:100%;
+height:220px;
+object-fit:cover
+}
+
+.card h3{
+padding:15px;
+cursor:pointer
+}
+
+.detay{
+display:none;
+padding:15px;
+line-height:1.6
+}
+
+.detay img{
+width:100%;
+margin-top:15px;
+border-radius:8px
+}
+
+.contact{
+background:#111;
+color:white;
+padding:30px;
+border-radius:10px
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px
+}
+
+</style>
+
+</head>
+
+<!-- WhatsApp Butonu -->
+<a href="https://wa.me/905454339116?text=Merhaba%20STK%20Teknik%20Dekorasyon,%20bilgi%20almak%20istiyorum."
+class="whatsapp" target="_blank" aria-label="WhatsApp">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="36" height="36" fill="white">
+<path d="M16 3C8.82 3 3 8.82 3 16c0 2.52.72 4.94 2.09 7.03L3 29l6.15-2.02A12.94 12.94 0 0016 29c7.18 0 13-5.82 13-13S23.18 3 16 3zm7.63 18.1c-.31.88-1.82 1.63-2.53 1.74-.67.1-1.51.15-2.44-.15-.57-.18-1.3-.42-2.23-.82-3.91-1.67-6.46-5.56-6.66-5.82-.2-.26-1.59-2.11-1.59-4.02 0-1.91 1-2.86 1.35-3.25.35-.39.78-.49 1.04-.49.26 0 .52 0 .75.01.24.01.55-.09.87.67.32.76 1.07 2.65 1.16 2.84.09.2.15.42.03.69-.12.27-.2.42-.38.65-.19.23-.4.5-.58.68-.19.2-.39.4-.17.8.22.39 1.01 1.66 2.17 2.69 1.5 1.33 2.77 1.75 3.16 1.94.39.19.61.17.84-.1.23-.27.97-1.12 1.23-1.5.26-.39.51-.33.87-.2.35.13 2.26 1.05 2.64 1.23.39.19.64.29.74.45.1.16.1.94-.22 1.81z"/>
+</svg>
+
+</a>
+
+<style>
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:65px;
+    height:65px;
+    background:#25D366;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    box-shadow:0 8px 20px rgba(0,0,0,.35);
+    z-index:9999;
+    transition:.3s;
+}
+.whatsapp:hover{
+    transform:scale(1.1);
+    background:#1EBE5D;
+}
+</style>
+  
+  <body>
+
+
 <header>
+
+<b>TK Teknik Dekorasyon</b>
+
+<nav>
+<a href="#hizmet">Hizmetler</a>
+<a href="#iletisim">İletişim</a>
+</nav>
+
+</header>
+
+
+
+<section class="hero">
+
+<div>
+
+<h1>Profesyonel Dekorasyon Hizmetleri</h1>
+
+<p>
+Modern tasarım kaliteli işçilik
+</p>
+
+<a class="btn" href="#iletisim">
+Bize Ulaşın
+</a>
+
+</div>
+
+</section>
+
+
+
+<section id="hizmet">
+
+<h2>Hizmet Kataloğu</h2>
+
+<div class="grid">
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800">
+
+<h3 onclick="ac('i')">
+İç dış Dekorasyon ▾
+</h3>
+
+<div id="i" class="detay">
+
+Modern salon, oda ve yaşam alanları.
+
+<img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=700">
+
+</div>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800">
+
+<h3 onclick="ac('b')">
+Mutfak & Banyo ▾
+</h3>
+
+<div id="b" class="detay">
+
+Mutfak yenileme ve banyo tadilat.
+
+<img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?w=700">
+
+</div>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800">
+
+<h3 onclick="ac('p')">
+PVC Doğrama ▾
+</h3>
+
+<div id="p" class="detay">
+
+PVC pencere ve kapı sistemleri.
+
+<img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=700">
+
+</div>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800">
+
+<h3 onclick="ac('c')">
+Cam Balkon ▾
+</h3>
+
+<div id="c" class="detay">
+
+Katlanır cam balkon,
+sürgülü sistemler ve balkon kapatma.
+
+<img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?w=700">
+
+<img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=700">
+
+<img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=700">
+
+</div>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800">
+
+<h3 onclick="ac('d')">
+Duşakabin ▾
+</h3>
+
+<div id="d" class="detay">
+
+Özel ölçü duşakabin,
+temperli cam sistemleri.
+
+<img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?w=700">
+
+<img src="https://images.unsplash.com/photo-1584622781867-4c8e7a6c2f3d?w=700">
+
+</div>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800">
+
+<h3 onclick="ac('pg')">
+Pergola Sistemleri ▾
+</h3>
+
+<div id="pg" class="detay">
+
+Otomatik pergola ve tente çözümleri.
+
+<img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?w=700">
+
+</div>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800">
+
+<h3 onclick="ac('s')">
+Seramik & Fayans ▾
+</h3>
+
+<div id="s" class="detay">
+
+Zemin ve duvar kaplama uygulamaları.
+
+<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=700">
+
+</div>
+
+</div>
+
+
+
+</div>
+
+</section>
+
+
+
+
+<section id="iletisim">
+
+<div class="contact">
+
+<h2>İletişim</h2>
+
+<p>
+<b>Telefon:</b> 0545 433 91 16
+</p>
+
+<p>
+<b>E-Posta:</b> k.dekorasyon05@gmail.com
+</p>
+
+<p>
+<b>Firma:</b> TK Teknik Dekorasyon
+</p>
+
+<p>
+PVC Doğrama - Cam Balkon - Pergola - Duşakabin - Dekorasyon
+</p>
+
+</div>
+
+</section>
+
+
+
+
+</section>
+
+
+
+
+<footer>
+
+© 1996 TK Teknik Dekorasyon
+
+</footer>
+
+
+
+<script>
+
+function ac(id){
+
+let x=document.getElementById(id);
+
+x.style.display=x.style.display=="block"?"none":"block";
+
+}
+
+</script>
+
+
+</body>
+</html>
+
 
 <b>TK Teknik Dekorasyon</b>
 
